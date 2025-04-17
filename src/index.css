@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans text-surface-800 dark:text-surface-100;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-all duration-200 transform;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary-dark active:scale-95;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-white hover:bg-secondary-dark active:scale-95;
+  }
+  
+  .btn-outline {
+    @apply border border-surface-300 dark:border-surface-600 hover:bg-surface-100 dark:hover:bg-surface-700 active:scale-95;
+  }
+  
+  .card {
+    @apply bg-white dark:bg-surface-800 rounded-xl shadow-card transition-all duration-300;
+  }
+  
+  .card-hover {
+    @apply hover:shadow-lg hover:-translate-y-1;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-2 rounded-lg border border-surface-300 dark:border-surface-600 
+    bg-white dark:bg-surface-700 text-surface-800 dark:text-white
+    focus:outline-none focus:ring-2 focus:ring-primary/50 dark:focus:ring-primary-light/50
+    placeholder:text-surface-400 dark:placeholder:text-surface-500
+    transition-all duration-200;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.08);
+  }
+}
