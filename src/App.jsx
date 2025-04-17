@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
-import { Moon, Sun, Home, Search, Heart, MessageSquare, User } from 'lucide-react'
+import { Moon, Sun, HomeIcon, Search, Heart, MessageSquare, User } from 'lucide-react'
 import { motion } from 'framer-motion'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
@@ -126,7 +126,7 @@ function App() {
       <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white dark:bg-surface-800 border-t border-surface-200 dark:border-surface-700 py-2 px-6 z-50 transition-colors duration-300">
         <div className="flex justify-between items-center">
           <a href="/" className="flex flex-col items-center text-primary">
-            <Home size={20} />
+            <HomeIcon size={20} />
             <span className="text-xs mt-1">Home</span>
           </a>
           <a href="#search" className="flex flex-col items-center text-surface-600 dark:text-surface-400">
