@@ -3,7 +3,6 @@ import { Routes, Route } from 'react-router-dom'
 import { Moon, Sun, HomeIcon, Search, Heart, MessageSquare, User } from 'lucide-react'
 import { motion } from 'framer-motion'
 import Home from './pages/Home'
-import Calculators from './pages/Calculators'
 import NotFound from './pages/NotFound'
 
 function App() {
@@ -46,7 +45,6 @@ function App() {
             <a href="#buy" className="font-medium text-surface-700 hover:text-primary dark:text-surface-300 dark:hover:text-primary-light transition-colors">Buy</a>
             <a href="#rent" className="font-medium text-surface-700 hover:text-primary dark:text-surface-300 dark:hover:text-primary-light transition-colors">Rent</a>
             <a href="#sell" className="font-medium text-surface-700 hover:text-primary dark:text-surface-300 dark:hover:text-primary-light transition-colors">Sell</a>
-            <a href="/calculators" className="font-medium text-surface-700 hover:text-primary dark:text-surface-300 dark:hover:text-primary-light transition-colors">Calculators</a>
             <a href="#agents" className="font-medium text-surface-700 hover:text-primary dark:text-surface-300 dark:hover:text-primary-light transition-colors">Agents</a>
           </nav>
           
@@ -74,7 +72,6 @@ function App() {
       <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/calculators" element={<Calculators />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
