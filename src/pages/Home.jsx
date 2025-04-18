@@ -389,7 +389,7 @@ function Home() {
                   transition={{ duration: 0.4 }}
                   className="card card-hover overflow-hidden"
                 >
-                  <div className="relative h-60 overflow-hidden">
+                  <div className="relative h-40 overflow-hidden">
                     <img 
                       src={property.image} 
                       alt={property.title}
