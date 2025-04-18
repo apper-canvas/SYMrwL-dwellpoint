@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Search, MapPin, Home as HomeIcon, Building2, Warehouse, Filter, X, ChevronDown, ChevronUp } from 'lucide-react'
-import MainFeature from '../components/MainFeature'
 
 // Sample property data
 const PROPERTY_DATA = [
@@ -544,9 +543,6 @@ function Home() {
           </div>
         </div>
       </section>
-
-      {/* Main Feature Section */}
-      <MainFeature />
     </div>
   )
 }
